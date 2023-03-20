@@ -1,0 +1,10 @@
+---
+- name: Pull docker image of Calculator
+  hosts: localhost
+  tasks:
+
+    - name: pull docker image
+      shell: docker pull rashmikk05/spe_project
+
+    - name: running container
+      shell: docker run -it -d rashmikk05/spe_project
